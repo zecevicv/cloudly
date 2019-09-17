@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html {
+    // This makes 1rem = 10px
+    font-size: 62.5%;
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+    }
+    
+    @include respond(tab-port) { // width < 900? 
+        font-size: 50%; // 1rem - 8px, 8/16 = 50%
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-light;
+}

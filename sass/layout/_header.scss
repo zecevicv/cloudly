@@ -1,0 +1,93 @@
+.header {
+    height: 95vh;
+    // background-image: linear-gradient(to right, #1C0C81, #5237EB, #2CD4D9);
+    background-image: url('../img/hero_edit.svg');
+    background-size: cover;
+    background-position: center center;
+    color: $color-light;
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(30deg, #1C0C81, #5237EB, #2CD4D9);
+    }
+
+    // Container
+    .container {
+        height: 95vh;
+        position: relative;
+    }
+
+    // Logo
+    &__logo {
+        height: 3.5rem;
+    }
+
+    // Main Navbar
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &-list {
+            list-style: none;
+
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+
+        &-item {
+            display: inline-block;
+
+            // Last Navigation Link will not have margin
+            // Others will
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+
+        &-link {
+            &:link,
+            &:visited {
+                color: inherit;
+                text-decoration: none;
+                transition: all .3s;
+                line-height: 1;
+
+                // Icon
+                i {
+                    vertical-align: middle;
+                }
+            }
+
+            &:hover,
+            &:active {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    // Content
+    &__content {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        // Instead of left: 0 I included the 15px padding
+        // since bootstrap's grid system on other places
+        // has 15px padding
+        left: 15px;
+        transform: translate(0, -50%);
+
+        @include respond(tab-port) {
+            width: 75%;
+        }
+
+        @include respond(tab-port) {
+            width: 95%;
+        }
+
+    }
+}

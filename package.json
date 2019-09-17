@@ -1,0 +1,17 @@
+{
+  "name": "spacedrive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile-and-minify:sass": "node-sass sass/main.scss css/style-minified.css --output-style compressed"
+  },
+  "author": "Vladimir Zecevic",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3"
+  }
+}
