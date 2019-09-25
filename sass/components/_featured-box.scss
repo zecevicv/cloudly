@@ -1,8 +1,8 @@
 .featured-box {
     background-color: $color-light;
     padding: 4rem; 
-    box-shadow: $box-shadow-large;
-    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
     position: relative;
     z-index: 1;
 

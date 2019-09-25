@@ -20,6 +20,7 @@
 // Plans Section
 .plans {
     background-image: linear-gradient(-30deg, $color-primary-dark 0%, $color-quaternary 49%, $color-secondary 100%);
+    // background-color: $color-tertiary;
     padding: 10rem 0 20rem 0;
 
     &__text-box {
@@ -51,7 +52,7 @@
     &__box {
         width: 55%;
         background: $color-light;
-        box-shadow: $box-shadow-large;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
         border-radius: 4px;
         padding: 4rem;
 
