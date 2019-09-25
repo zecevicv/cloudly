@@ -1623,6 +1623,9 @@ h6 {
   border-radius: 4px;
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 575.98px) {
+    .featured-box {
+      padding: 0; } }
   @media only screen and (max-width: 991.98px) {
     .featured-box {
       border-radius: 0; } }

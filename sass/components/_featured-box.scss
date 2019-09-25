@@ -6,6 +6,10 @@
     position: relative;
     z-index: 1;
 
+    @include respond(phone) {
+        padding: 4rem 15px;
+    }
+
     @include respond(tab-port) {
         border-radius: 0;
     }

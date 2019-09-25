@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile-and-minify:sass": "node-sass sass/main.scss css/style-minified.css --output-style compressed"
+    "compile-and-minify:sass": "node-sass sass/main.scss css/style-minified.css --output-style compressed -w"
   },
   "author": "Vladimir Zecevic",
   "license": "ISC",
