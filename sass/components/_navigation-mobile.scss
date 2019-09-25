@@ -40,7 +40,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient(#5237EB, #2CD4D9);
+        background-image: radial-gradient(#2CD4D9, #5237EB);
         z-index: 5;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1); 
 
@@ -102,7 +102,7 @@
 
     // Functionality
     &__checkbox:checked ~ &__background {
-        transform: scale(50);
+        transform: scale(60);
     }
 
     &__checkbox:checked ~ &__nav {
