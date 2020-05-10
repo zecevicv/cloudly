@@ -13,17 +13,25 @@
         border-radius: 100px;
         box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
         border: 2px solid transparent;
-        transition: all .3s;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        position: relative;
+        backface-visibility: hidden;
     }
 
-    &--primary {
-        color: $color-primary;
-        background-color: $color-secondary;
-
+    &--primary:link,
+    &--primary:visited {
+        color: $color-secondary;
+        background-image: linear-gradient($color-secondary, $color-secondary);
+        background-size: 100% 0;
+        background-repeat: no-repeat;
+        background-position: bottom -1px left 0;
+        border: 2px solid $color-secondary;
+        transition: all .5s ease-in-out;
+        
         &:hover {
-            color: $color-light;
-            background-color: transparentize($color-secondary, 1);
-            border: 2px solid $color-secondary;
+            color: $color-primary;
+            background-size: 100% 110%;
         }
     }
 

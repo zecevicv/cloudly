@@ -1,3 +1,30 @@
+// Main Container
+.main-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 496px;
+    background-color: $color-light;
+
+    @include respond(tab-land) {
+        margin-bottom: 443px;
+    }
+
+    @include respond(tab-port) {
+        margin-bottom: 393px;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        margin-bottom: 490px;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 0;
+    }
+}
+
 // Features Section
 .features-1 {
     padding: $section-padding-default;

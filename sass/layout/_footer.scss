@@ -1,9 +1,17 @@
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 10rem 0 15rem 0;
     background-color: $color-primary;
+    background-image: linear-gradient(to top, darken($color-primary, 10%), lighten($color-primary, 10% ));
 
     @include respond(tab-port) {
         padding: 10rem 0;
+    }
+
+    @include respond(phone) {
+        position: static;
     }
 
     &__logo {
