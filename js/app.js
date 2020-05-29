@@ -2,8 +2,6 @@ window.onunload = function () {
   window.scrollTo(0, 0);
 }
 
-gsap.set('body', {opacity: 0});
-
 window.addEventListener('load', (event) => {
         gsap.to('body', {opacity: 1});
 
