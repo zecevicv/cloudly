@@ -37,6 +37,11 @@
     transition: all .3s ease;
     overflow: hidden;
     position: relative;
+    backface-visibility: hidden;
+    
+    * {
+        backface-visibility: hidden;
+    }
 
     &__wrapper {
         @include respond(tab-port) {
