@@ -32,21 +32,19 @@ window.addEventListener('load', (event) => {
                         //  Background
                         .from('.header svg #gradient', {duration: 1.5, ease:"back.out(1)", y: "-200%", delay: .25})
                         // Navbar
-                        .from('.header__navbar', {duration: 1, ease:"back.out(1)", opacity: 0, y: "-5%", x: "-5%"}, "-=1.25")
+                        .from('.header__navbar', {duration: 1, ease:"power2.out", opacity: 0, y: "-5%", x: "-5%"}, "-=1.25")
                         // Header Text Content
-                        .from('.header__content > div > h1', {duration: 1, ease:"back.out(1)", opacity: 0, x: "-100px"})
-                        .from('.header__content > div > p', {duration: 1, ease:"back.out(1)", opacity: 0, x: "100px"}, "<")
-                        .from('.header__content > div > div', {duration: 1, ease:"back.out(1)", opacity: 0, y: "100px"}, "<")
+                        .from('.header__content > div > h1', {duration: 1, ease:"power2.out", opacity: 0, x: "-100px"})
+                        .from('.header__content > div > p', {duration: 1, ease:"power2.out", opacity: 0, x: "100px"}, "<")
+                        .from('.header__content > div > div', {duration: 1, ease:"power2.out", opacity: 0, y: "100px"}, "<")
                         // SVG Icons
-                        .from('.header #Layer_2 g[id^="object"]', {duration: .75, ease:"back.out(1)", transformOrigin: '50%, 50%', opacity: 0, scale: 0, stagger:{ each: 0.1, from: 'center' }}, "-=.25")
-                        // SVG Icons
-                        .to('.header #Layer_2 #wrapper', {duration: 3.5, ease:"power0", y: -20, repeat: -1, yoyo: true}, "+=.25");
+                        .from('.header #Layer_2 g[id^="object"]', {duration: .8, ease:"power2.inOut", opacity: 0, stagger:{ each: 0.075, from: 'center' }}, "-=.25")
         
                 animations[1]
                         .from('.featured-box--1', {duration: 1, opacity: 0});
         
                 animations[2]
-                        .from('.features-1 .card-small', {duration: .5, opacity: 0, scale: .9, stagger: {each:.2, from: "start"}});
+                        .from('.features-1 .card-small', {duration: .5, opacity: 0, stagger: {each:.2, from: "start"}});
         
                 animations[3]
                         .from('.features-2 .card-large__wrapper', {duration: 1, ease:"back", opacity: 0, y: "50%", stagger: {each:.2, from: "start"}});

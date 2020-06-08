@@ -1797,6 +1797,8 @@ h6 {
     height: 100%;
     width: 100%;
     backface-visibility: hidden; }
+  .header svg #gradient {
+    backface-visibility: hidden; }
   .header svg g[id^="object"] {
     backface-visibility: hidden;
     width: 50px; }
@@ -1815,7 +1817,8 @@ h6 {
     padding: 4rem 0;
     font-size: 1.4rem;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    backface-visibility: hidden; }
     .header__navbar-list {
       list-style: none; }
       @media only screen and (max-width: 991.98px) {
@@ -1850,6 +1853,8 @@ h6 {
     @media only screen and (max-width: 991.98px) {
       .header__content {
         width: 95%; } }
+    .header__content > div > * {
+      backface-visibility: hidden; }
 
 .footer {
   position: fixed;
